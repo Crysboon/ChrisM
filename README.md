@@ -1,2 +1,2 @@
 # ChrisM
-Music Player using in C# .NET Framework (WinForms)
+Music Player using C# .NET Framework WinForms
