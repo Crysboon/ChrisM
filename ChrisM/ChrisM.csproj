@@ -82,5 +82,19 @@
   <ItemGroup>
     <Folder Include="Classes\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Img\headphones-outline.png" />
+    <Content Include="Img\music-outline.png" />
+    <Content Include="Img\pause-circle-outline.png" />
+    <Content Include="Img\play-circle-outline.png" />
+    <Content Include="Img\rewind-left-outline.png" />
+    <Content Include="Img\rewind-right-outline.png" />
+    <Content Include="Img\skip-back-outline.png" />
+    <Content Include="Img\skip-forward-outline.png" />
+    <Content Include="Img\volume-down-outline.png" />
+    <Content Include="Img\volume-mute-outline.png" />
+    <Content Include="Img\volume-off-outline.png" />
+    <Content Include="Img\volume-up-outline.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
