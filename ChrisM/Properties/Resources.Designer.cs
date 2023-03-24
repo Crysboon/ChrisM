@@ -63,6 +63,16 @@ namespace ChrisM.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap c_d_x_PDX_a_82obo_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("c-d-x-PDX_a_82obo-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap folder_outline {
             get {
                 object obj = ResourceManager.GetObject("folder-outline", resourceCulture);

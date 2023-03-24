@@ -92,9 +92,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::ChrisM.Properties.Resources.c_d_x_PDX_a_82obo_unsplash;
             this.pictureBox1.Location = new System.Drawing.Point(303, 25);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(379, 322);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 

@@ -93,5 +93,8 @@
   <ItemGroup>
     <None Include="Resources\folder-outline.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c-d-x-PDX_a_82obo-unsplash.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
