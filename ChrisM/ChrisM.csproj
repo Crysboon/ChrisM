@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -83,18 +84,14 @@
     <Folder Include="Classes\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Img\headphones-outline.png" />
-    <Content Include="Img\music-outline.png" />
-    <Content Include="Img\pause-circle-outline.png" />
-    <Content Include="Img\play-circle-outline.png" />
-    <Content Include="Img\rewind-left-outline.png" />
-    <Content Include="Img\rewind-right-outline.png" />
-    <Content Include="Img\skip-back-outline.png" />
-    <Content Include="Img\skip-forward-outline.png" />
-    <Content Include="Img\volume-down-outline.png" />
-    <Content Include="Img\volume-mute-outline.png" />
-    <Content Include="Img\volume-off-outline.png" />
-    <Content Include="Img\volume-up-outline.png" />
+    <None Include="Resources\rewind-left-outline.png" />
+    <None Include="Resources\skip-back-outline.png" />
+    <None Include="Resources\rewind-right-outline.png" />
+    <None Include="Resources\skip-forward-outline.png" />
+    <None Include="Resources\play-circle-outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-outline.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
