@@ -136,6 +136,9 @@
   <data name="rewind-left-outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rewind-left-outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fast-backward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fast-backward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="play-circle-outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\play-circle-outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,7 +163,7 @@
   <data name="folder-outline" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\folder-outline.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fast-backward" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fast-backward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
