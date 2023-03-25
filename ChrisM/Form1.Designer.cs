@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.pnlMainContent = new System.Windows.Forms.Panel();
-            this.pbxMainImage = new System.Windows.Forms.PictureBox();
             this.lblTitleCurrentMusic = new System.Windows.Forms.Label();
             this.pnlTitles = new System.Windows.Forms.Panel();
             this.lblTitlesMusics = new System.Windows.Forms.Label();
@@ -38,24 +37,25 @@
             this.pnlRightSide = new System.Windows.Forms.Panel();
             this.panelMarginBottom = new System.Windows.Forms.Panel();
             this.pnlMenuButtons = new System.Windows.Forms.Panel();
-            this.btnGoToFirstMusic = new System.Windows.Forms.Button();
-            this.btnPrevious = new System.Windows.Forms.Button();
             this.tbVolume = new System.Windows.Forms.TrackBar();
-            this.btnGoToLastMusic = new System.Windows.Forms.Button();
-            this.btnNext = new System.Windows.Forms.Button();
-            this.btnSearchFile = new System.Windows.Forms.Button();
-            this.btnPlay = new System.Windows.Forms.Button();
             this.tbMusicTimeLine = new System.Windows.Forms.TrackBar();
             this.lblVolume = new System.Windows.Forms.Label();
             this.lblCurrentTime = new System.Windows.Forms.Label();
             this.lblMusicTotalTime = new System.Windows.Forms.Label();
+            this.pbxMainImage = new System.Windows.Forms.PictureBox();
+            this.btnGoToFirstMusic = new System.Windows.Forms.Button();
+            this.btnPrevious = new System.Windows.Forms.Button();
+            this.btnGoToLastMusic = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.btnSearchFile = new System.Windows.Forms.Button();
+            this.btnPlay = new System.Windows.Forms.Button();
             this.pnlMainContent.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMainImage)).BeginInit();
             this.pnlTitles.SuspendLayout();
             this.panelMarginBottom.SuspendLayout();
             this.pnlMenuButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbVolume)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMusicTimeLine)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMainImage)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMainContent
@@ -72,17 +72,6 @@
             this.pnlMainContent.Name = "pnlMainContent";
             this.pnlMainContent.Size = new System.Drawing.Size(984, 510);
             this.pnlMainContent.TabIndex = 5;
-            // 
-            // pbxMainImage
-            // 
-            this.pbxMainImage.BackgroundImage = global::ChrisM.Properties.Resources.kari_shea_YCQFgqOzLmU_unsplash;
-            this.pbxMainImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxMainImage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbxMainImage.Location = new System.Drawing.Point(256, 96);
-            this.pbxMainImage.Name = "pbxMainImage";
-            this.pbxMainImage.Size = new System.Drawing.Size(485, 237);
-            this.pbxMainImage.TabIndex = 7;
-            this.pbxMainImage.TabStop = false;
             // 
             // lblTitleCurrentMusic
             // 
@@ -176,32 +165,6 @@
             this.pnlMenuButtons.Size = new System.Drawing.Size(984, 100);
             this.pnlMenuButtons.TabIndex = 3;
             // 
-            // btnGoToFirstMusic
-            // 
-            this.btnGoToFirstMusic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnGoToFirstMusic.BackgroundImage = global::ChrisM.Properties.Resources.fast_backward;
-            this.btnGoToFirstMusic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGoToFirstMusic.FlatAppearance.BorderSize = 0;
-            this.btnGoToFirstMusic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGoToFirstMusic.Location = new System.Drawing.Point(343, 31);
-            this.btnGoToFirstMusic.Name = "btnGoToFirstMusic";
-            this.btnGoToFirstMusic.Size = new System.Drawing.Size(37, 33);
-            this.btnGoToFirstMusic.TabIndex = 14;
-            this.btnGoToFirstMusic.UseVisualStyleBackColor = true;
-            // 
-            // btnPrevious
-            // 
-            this.btnPrevious.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnPrevious.BackgroundImage = global::ChrisM.Properties.Resources.next_left;
-            this.btnPrevious.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPrevious.FlatAppearance.BorderSize = 0;
-            this.btnPrevious.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrevious.Location = new System.Drawing.Point(406, 31);
-            this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(37, 33);
-            this.btnPrevious.TabIndex = 13;
-            this.btnPrevious.UseVisualStyleBackColor = true;
-            // 
             // tbVolume
             // 
             this.tbVolume.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -210,58 +173,6 @@
             this.tbVolume.Size = new System.Drawing.Size(200, 45);
             this.tbVolume.TabIndex = 10;
             this.tbVolume.TickStyle = System.Windows.Forms.TickStyle.None;
-            // 
-            // btnGoToLastMusic
-            // 
-            this.btnGoToLastMusic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnGoToLastMusic.BackgroundImage = global::ChrisM.Properties.Resources.fast_forward;
-            this.btnGoToLastMusic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGoToLastMusic.FlatAppearance.BorderSize = 0;
-            this.btnGoToLastMusic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGoToLastMusic.Location = new System.Drawing.Point(615, 31);
-            this.btnGoToLastMusic.Name = "btnGoToLastMusic";
-            this.btnGoToLastMusic.Size = new System.Drawing.Size(37, 33);
-            this.btnGoToLastMusic.TabIndex = 12;
-            this.btnGoToLastMusic.UseVisualStyleBackColor = true;
-            // 
-            // btnNext
-            // 
-            this.btnNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnNext.BackgroundImage = global::ChrisM.Properties.Resources.next;
-            this.btnNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNext.FlatAppearance.BorderSize = 0;
-            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNext.Location = new System.Drawing.Point(552, 31);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(37, 33);
-            this.btnNext.TabIndex = 11;
-            this.btnNext.UseVisualStyleBackColor = true;
-            // 
-            // btnSearchFile
-            // 
-            this.btnSearchFile.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnSearchFile.BackgroundImage = global::ChrisM.Properties.Resources.add;
-            this.btnSearchFile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSearchFile.FlatAppearance.BorderSize = 0;
-            this.btnSearchFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchFile.Location = new System.Drawing.Point(36, 26);
-            this.btnSearchFile.Name = "btnSearchFile";
-            this.btnSearchFile.Size = new System.Drawing.Size(45, 43);
-            this.btnSearchFile.TabIndex = 9;
-            this.btnSearchFile.UseVisualStyleBackColor = true;
-            // 
-            // btnPlay
-            // 
-            this.btnPlay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.btnPlay.BackgroundImage = global::ChrisM.Properties.Resources.play_button;
-            this.btnPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPlay.FlatAppearance.BorderSize = 0;
-            this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlay.Location = new System.Drawing.Point(469, 21);
-            this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(57, 53);
-            this.btnPlay.TabIndex = 8;
-            this.btnPlay.UseVisualStyleBackColor = true;
             // 
             // tbMusicTimeLine
             // 
@@ -304,6 +215,96 @@
             this.lblMusicTotalTime.TabIndex = 17;
             this.lblMusicTotalTime.Text = "00:00";
             // 
+            // pbxMainImage
+            // 
+            this.pbxMainImage.BackgroundImage = global::ChrisM.Properties.Resources.kari_shea_YCQFgqOzLmU_unsplash;
+            this.pbxMainImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxMainImage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbxMainImage.Location = new System.Drawing.Point(256, 96);
+            this.pbxMainImage.Name = "pbxMainImage";
+            this.pbxMainImage.Size = new System.Drawing.Size(485, 237);
+            this.pbxMainImage.TabIndex = 7;
+            this.pbxMainImage.TabStop = false;
+            // 
+            // btnGoToFirstMusic
+            // 
+            this.btnGoToFirstMusic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnGoToFirstMusic.BackgroundImage = global::ChrisM.Properties.Resources.fast_backward;
+            this.btnGoToFirstMusic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGoToFirstMusic.FlatAppearance.BorderSize = 0;
+            this.btnGoToFirstMusic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGoToFirstMusic.Location = new System.Drawing.Point(343, 31);
+            this.btnGoToFirstMusic.Name = "btnGoToFirstMusic";
+            this.btnGoToFirstMusic.Size = new System.Drawing.Size(37, 33);
+            this.btnGoToFirstMusic.TabIndex = 14;
+            this.btnGoToFirstMusic.UseVisualStyleBackColor = true;
+            // 
+            // btnPrevious
+            // 
+            this.btnPrevious.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnPrevious.BackgroundImage = global::ChrisM.Properties.Resources.next_left;
+            this.btnPrevious.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPrevious.FlatAppearance.BorderSize = 0;
+            this.btnPrevious.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrevious.Location = new System.Drawing.Point(406, 31);
+            this.btnPrevious.Name = "btnPrevious";
+            this.btnPrevious.Size = new System.Drawing.Size(37, 33);
+            this.btnPrevious.TabIndex = 13;
+            this.btnPrevious.UseVisualStyleBackColor = true;
+            // 
+            // btnGoToLastMusic
+            // 
+            this.btnGoToLastMusic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnGoToLastMusic.BackgroundImage = global::ChrisM.Properties.Resources.fast_forward;
+            this.btnGoToLastMusic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGoToLastMusic.FlatAppearance.BorderSize = 0;
+            this.btnGoToLastMusic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGoToLastMusic.Location = new System.Drawing.Point(615, 31);
+            this.btnGoToLastMusic.Name = "btnGoToLastMusic";
+            this.btnGoToLastMusic.Size = new System.Drawing.Size(37, 33);
+            this.btnGoToLastMusic.TabIndex = 12;
+            this.btnGoToLastMusic.UseVisualStyleBackColor = true;
+            // 
+            // btnNext
+            // 
+            this.btnNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnNext.BackgroundImage = global::ChrisM.Properties.Resources.next;
+            this.btnNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNext.FlatAppearance.BorderSize = 0;
+            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNext.Location = new System.Drawing.Point(552, 31);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(37, 33);
+            this.btnNext.TabIndex = 11;
+            this.btnNext.UseVisualStyleBackColor = true;
+            // 
+            // btnSearchFile
+            // 
+            this.btnSearchFile.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnSearchFile.BackgroundImage = global::ChrisM.Properties.Resources.add;
+            this.btnSearchFile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSearchFile.FlatAppearance.BorderSize = 0;
+            this.btnSearchFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchFile.Location = new System.Drawing.Point(36, 26);
+            this.btnSearchFile.Name = "btnSearchFile";
+            this.btnSearchFile.Size = new System.Drawing.Size(45, 43);
+            this.btnSearchFile.TabIndex = 9;
+            this.btnSearchFile.UseVisualStyleBackColor = true;
+            this.btnSearchFile.Click += new System.EventHandler(this.btnSearchFile_Click);
+            // 
+            // btnPlay
+            // 
+            this.btnPlay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.btnPlay.BackgroundImage = global::ChrisM.Properties.Resources.play_button;
+            this.btnPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPlay.FlatAppearance.BorderSize = 0;
+            this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlay.Location = new System.Drawing.Point(469, 21);
+            this.btnPlay.Name = "btnPlay";
+            this.btnPlay.Size = new System.Drawing.Size(57, 53);
+            this.btnPlay.TabIndex = 8;
+            this.btnPlay.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -315,7 +316,6 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.pnlMainContent.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMainImage)).EndInit();
             this.pnlTitles.ResumeLayout(false);
             this.panelMarginBottom.ResumeLayout(false);
             this.panelMarginBottom.PerformLayout();
@@ -323,6 +323,7 @@
             this.pnlMenuButtons.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbVolume)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbMusicTimeLine)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMainImage)).EndInit();
             this.ResumeLayout(false);
 
         }
