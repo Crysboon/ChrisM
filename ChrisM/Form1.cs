@@ -14,7 +14,7 @@ namespace ChrisM
 {
     public partial class Form1 : Form
     {
-        private List<string> musics = new List<string>();
+        private List<string> songFilesPaths = new List<string>();
 
         public Form1()
         {
@@ -23,7 +23,7 @@ namespace ChrisM
 
         private void btnSearchFile_Click(object sender, EventArgs e)
         {
-            var filePath = string.Empty;
+            List<string> songsTitle = new List<string>();
 
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
@@ -36,11 +36,19 @@ namespace ChrisM
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     //Get the path of specified file
-                    filePath = openFileDialog.FileName;
-                }
-            }
+                    foreach (string path in openFileDialog.FileNames)
+                    {
+                        songFilesPaths.Add(path);
+                    }
 
-            Console.WriteLine(filePath.GetType());
+                    foreach (string name in openFileDialog.SafeFileNames)
+                    {
+                        songsTitle.Add(name);
+                    }
+                }
+
+                lbxTitleMusics.DataSource = songsTitle;
+            }
         }
     }
 }
