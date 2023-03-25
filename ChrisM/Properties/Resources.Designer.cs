@@ -83,6 +83,16 @@ namespace ChrisM.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kari_shea_YCQFgqOzLmU_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("kari-shea-YCQFgqOzLmU-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap play_circle_outline {
             get {
                 object obj = ResourceManager.GetObject("play-circle-outline", resourceCulture);
