@@ -99,5 +99,26 @@
   <ItemGroup>
     <None Include="Resources\kari-shea-YCQFgqOzLmU-unsplash.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rewind-left-outline-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fast-forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fast-backward.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
