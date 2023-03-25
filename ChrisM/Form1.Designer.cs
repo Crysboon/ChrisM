@@ -28,137 +28,151 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gbxbuttonsbottom = new System.Windows.Forms.GroupBox();
-            this.tbVolume = new System.Windows.Forms.TrackBar();
-            this.lbxTitleMusics = new System.Windows.Forms.ListBox();
-            this.lblTitlesMusics = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlMainContent = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btnGoToFirstMusic = new System.Windows.Forms.Button();
             this.btnPrevious = new System.Windows.Forms.Button();
+            this.tbVolume = new System.Windows.Forms.TrackBar();
             this.btnGoToLastMusic = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnSearchFile = new System.Windows.Forms.Button();
             this.btnPlay = new System.Windows.Forms.Button();
-            this.gbxbuttonsbottom.SuspendLayout();
+            this.pnlTitles = new System.Windows.Forms.Panel();
+            this.lblTitlesMusics = new System.Windows.Forms.Label();
+            this.lbxTitleMusics = new System.Windows.Forms.ListBox();
+            this.pnlMainContent.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbVolume)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlTitles.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gbxbuttonsbottom
+            // pnlMainContent
             // 
-            this.gbxbuttonsbottom.BackColor = System.Drawing.Color.White;
-            this.gbxbuttonsbottom.Controls.Add(this.btnGoToFirstMusic);
-            this.gbxbuttonsbottom.Controls.Add(this.btnPrevious);
-            this.gbxbuttonsbottom.Controls.Add(this.tbVolume);
-            this.gbxbuttonsbottom.Controls.Add(this.btnGoToLastMusic);
-            this.gbxbuttonsbottom.Controls.Add(this.btnNext);
-            this.gbxbuttonsbottom.Controls.Add(this.btnSearchFile);
-            this.gbxbuttonsbottom.Controls.Add(this.btnPlay);
-            this.gbxbuttonsbottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gbxbuttonsbottom.Location = new System.Drawing.Point(0, 364);
-            this.gbxbuttonsbottom.Name = "gbxbuttonsbottom";
-            this.gbxbuttonsbottom.Size = new System.Drawing.Size(984, 97);
-            this.gbxbuttonsbottom.TabIndex = 1;
-            this.gbxbuttonsbottom.TabStop = false;
+            this.pnlMainContent.Controls.Add(this.pnlTitles);
+            this.pnlMainContent.Controls.Add(this.panel1);
+            this.pnlMainContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMainContent.Location = new System.Drawing.Point(0, 0);
+            this.pnlMainContent.Name = "pnlMainContent";
+            this.pnlMainContent.Size = new System.Drawing.Size(984, 461);
+            this.pnlMainContent.TabIndex = 5;
             // 
-            // tbVolume
+            // panel1
             // 
-            this.tbVolume.Location = new System.Drawing.Point(16, 40);
-            this.tbVolume.Name = "tbVolume";
-            this.tbVolume.Size = new System.Drawing.Size(200, 45);
-            this.tbVolume.TabIndex = 2;
-            this.tbVolume.TickStyle = System.Windows.Forms.TickStyle.None;
-            // 
-            // lbxTitleMusics
-            // 
-            this.lbxTitleMusics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.lbxTitleMusics.ForeColor = System.Drawing.Color.White;
-            this.lbxTitleMusics.FormattingEnabled = true;
-            this.lbxTitleMusics.Location = new System.Drawing.Point(15, 64);
-            this.lbxTitleMusics.Name = "lbxTitleMusics";
-            this.lbxTitleMusics.Size = new System.Drawing.Size(201, 277);
-            this.lbxTitleMusics.TabIndex = 3;
-            // 
-            // lblTitlesMusics
-            // 
-            this.lblTitlesMusics.AutoSize = true;
-            this.lblTitlesMusics.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitlesMusics.ForeColor = System.Drawing.Color.White;
-            this.lblTitlesMusics.Location = new System.Drawing.Point(12, 25);
-            this.lblTitlesMusics.Name = "lblTitlesMusics";
-            this.lblTitlesMusics.Size = new System.Drawing.Size(54, 24);
-            this.lblTitlesMusics.TabIndex = 4;
-            this.lblTitlesMusics.Text = "Titles";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ChrisM.Properties.Resources.c_d_x_PDX_a_82obo_unsplash;
-            this.pictureBox1.Location = new System.Drawing.Point(303, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(379, 322);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.panel1.Controls.Add(this.btnGoToFirstMusic);
+            this.panel1.Controls.Add(this.btnPrevious);
+            this.panel1.Controls.Add(this.tbVolume);
+            this.panel1.Controls.Add(this.btnGoToLastMusic);
+            this.panel1.Controls.Add(this.btnNext);
+            this.panel1.Controls.Add(this.btnSearchFile);
+            this.panel1.Controls.Add(this.btnPlay);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 361);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(984, 100);
+            this.panel1.TabIndex = 3;
             // 
             // btnGoToFirstMusic
             // 
             this.btnGoToFirstMusic.BackgroundImage = global::ChrisM.Properties.Resources.rewind_left_outline;
             this.btnGoToFirstMusic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGoToFirstMusic.Location = new System.Drawing.Point(303, 19);
+            this.btnGoToFirstMusic.Location = new System.Drawing.Point(313, 21);
             this.btnGoToFirstMusic.Name = "btnGoToFirstMusic";
-            this.btnGoToFirstMusic.Size = new System.Drawing.Size(71, 66);
-            this.btnGoToFirstMusic.TabIndex = 7;
+            this.btnGoToFirstMusic.Size = new System.Drawing.Size(60, 53);
+            this.btnGoToFirstMusic.TabIndex = 14;
             this.btnGoToFirstMusic.UseVisualStyleBackColor = true;
             // 
             // btnPrevious
             // 
             this.btnPrevious.BackgroundImage = global::ChrisM.Properties.Resources.skip_back_outline;
             this.btnPrevious.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPrevious.Location = new System.Drawing.Point(380, 19);
+            this.btnPrevious.Location = new System.Drawing.Point(390, 21);
             this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(71, 66);
-            this.btnPrevious.TabIndex = 6;
+            this.btnPrevious.Size = new System.Drawing.Size(60, 53);
+            this.btnPrevious.TabIndex = 13;
             this.btnPrevious.UseVisualStyleBackColor = true;
+            // 
+            // tbVolume
+            // 
+            this.tbVolume.Location = new System.Drawing.Point(19, 35);
+            this.tbVolume.Name = "tbVolume";
+            this.tbVolume.Size = new System.Drawing.Size(200, 45);
+            this.tbVolume.TabIndex = 10;
+            this.tbVolume.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
             // btnGoToLastMusic
             // 
             this.btnGoToLastMusic.BackgroundImage = global::ChrisM.Properties.Resources.rewind_right_outline;
             this.btnGoToLastMusic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGoToLastMusic.Location = new System.Drawing.Point(611, 19);
+            this.btnGoToLastMusic.Location = new System.Drawing.Point(621, 21);
             this.btnGoToLastMusic.Name = "btnGoToLastMusic";
-            this.btnGoToLastMusic.Size = new System.Drawing.Size(71, 66);
-            this.btnGoToLastMusic.TabIndex = 5;
+            this.btnGoToLastMusic.Size = new System.Drawing.Size(60, 53);
+            this.btnGoToLastMusic.TabIndex = 12;
             this.btnGoToLastMusic.UseVisualStyleBackColor = true;
             // 
             // btnNext
             // 
             this.btnNext.BackgroundImage = global::ChrisM.Properties.Resources.skip_forward_outline;
             this.btnNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNext.Location = new System.Drawing.Point(534, 19);
+            this.btnNext.Location = new System.Drawing.Point(544, 21);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(71, 66);
-            this.btnNext.TabIndex = 2;
+            this.btnNext.Size = new System.Drawing.Size(60, 53);
+            this.btnNext.TabIndex = 11;
             this.btnNext.UseVisualStyleBackColor = true;
             // 
             // btnSearchFile
             // 
             this.btnSearchFile.BackgroundImage = global::ChrisM.Properties.Resources.folder_outline;
             this.btnSearchFile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSearchFile.Location = new System.Drawing.Point(900, 19);
+            this.btnSearchFile.Location = new System.Drawing.Point(915, 26);
             this.btnSearchFile.Name = "btnSearchFile";
-            this.btnSearchFile.Size = new System.Drawing.Size(71, 66);
-            this.btnSearchFile.TabIndex = 1;
+            this.btnSearchFile.Size = new System.Drawing.Size(50, 43);
+            this.btnSearchFile.TabIndex = 9;
             this.btnSearchFile.UseVisualStyleBackColor = true;
             // 
             // btnPlay
             // 
             this.btnPlay.BackgroundImage = global::ChrisM.Properties.Resources.play_circle_outline;
             this.btnPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPlay.Location = new System.Drawing.Point(457, 19);
+            this.btnPlay.Location = new System.Drawing.Point(467, 21);
             this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(71, 66);
-            this.btnPlay.TabIndex = 0;
+            this.btnPlay.Size = new System.Drawing.Size(60, 53);
+            this.btnPlay.TabIndex = 8;
             this.btnPlay.UseVisualStyleBackColor = true;
+            // 
+            // pnlTitles
+            // 
+            this.pnlTitles.Controls.Add(this.lblTitlesMusics);
+            this.pnlTitles.Controls.Add(this.lbxTitleMusics);
+            this.pnlTitles.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlTitles.Location = new System.Drawing.Point(0, 0);
+            this.pnlTitles.Name = "pnlTitles";
+            this.pnlTitles.Size = new System.Drawing.Size(241, 361);
+            this.pnlTitles.TabIndex = 4;
+            // 
+            // lblTitlesMusics
+            // 
+            this.lblTitlesMusics.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblTitlesMusics.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitlesMusics.ForeColor = System.Drawing.Color.White;
+            this.lblTitlesMusics.Location = new System.Drawing.Point(0, 0);
+            this.lblTitlesMusics.Name = "lblTitlesMusics";
+            this.lblTitlesMusics.Size = new System.Drawing.Size(241, 53);
+            this.lblTitlesMusics.TabIndex = 6;
+            this.lblTitlesMusics.Text = "Titles";
+            this.lblTitlesMusics.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbxTitleMusics
+            // 
+            this.lbxTitleMusics.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.lbxTitleMusics.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lbxTitleMusics.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbxTitleMusics.ForeColor = System.Drawing.Color.White;
+            this.lbxTitleMusics.FormattingEnabled = true;
+            this.lbxTitleMusics.ItemHeight = 20;
+            this.lbxTitleMusics.Location = new System.Drawing.Point(0, 57);
+            this.lbxTitleMusics.Name = "lbxTitleMusics";
+            this.lbxTitleMusics.Size = new System.Drawing.Size(241, 304);
+            this.lbxTitleMusics.TabIndex = 5;
             // 
             // Form1
             // 
@@ -166,34 +180,32 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.ClientSize = new System.Drawing.Size(984, 461);
-            this.Controls.Add(this.lblTitlesMusics);
-            this.Controls.Add(this.lbxTitleMusics);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.gbxbuttonsbottom);
+            this.Controls.Add(this.pnlMainContent);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.gbxbuttonsbottom.ResumeLayout(false);
-            this.gbxbuttonsbottom.PerformLayout();
+            this.pnlMainContent.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbVolume)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlTitles.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnPlay;
-        private System.Windows.Forms.GroupBox gbxbuttonsbottom;
-        private System.Windows.Forms.Button btnSearchFile;
+        private System.Windows.Forms.Panel pnlMainContent;
+        private System.Windows.Forms.Panel pnlTitles;
+        private System.Windows.Forms.Label lblTitlesMusics;
+        private System.Windows.Forms.ListBox lbxTitleMusics;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnGoToFirstMusic;
+        private System.Windows.Forms.Button btnPrevious;
         private System.Windows.Forms.TrackBar tbVolume;
         private System.Windows.Forms.Button btnGoToLastMusic;
         private System.Windows.Forms.Button btnNext;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ListBox lbxTitleMusics;
-        private System.Windows.Forms.Label lblTitlesMusics;
-        private System.Windows.Forms.Button btnGoToFirstMusic;
-        private System.Windows.Forms.Button btnPrevious;
+        private System.Windows.Forms.Button btnSearchFile;
+        private System.Windows.Forms.Button btnPlay;
     }
 }
 
