@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlMainContent = new System.Windows.Forms.Panel();
+            this.pbxMainImage = new System.Windows.Forms.PictureBox();
             this.lblTitleCurrentMusic = new System.Windows.Forms.Label();
             this.pnlTitles = new System.Windows.Forms.Panel();
             this.lblTitlesMusics = new System.Windows.Forms.Label();
@@ -36,26 +37,25 @@
             this.pnlMarginLeftTitle = new System.Windows.Forms.Panel();
             this.pnlRightSide = new System.Windows.Forms.Panel();
             this.panelMarginBottom = new System.Windows.Forms.Panel();
-            this.pnlMenuButtons = new System.Windows.Forms.Panel();
-            this.tbVolume = new System.Windows.Forms.TrackBar();
-            this.tbMusicTimeLine = new System.Windows.Forms.TrackBar();
-            this.lblVolume = new System.Windows.Forms.Label();
-            this.lblCurrentTime = new System.Windows.Forms.Label();
             this.lblMusicTotalTime = new System.Windows.Forms.Label();
-            this.pbxMainImage = new System.Windows.Forms.PictureBox();
+            this.lblCurrentTime = new System.Windows.Forms.Label();
+            this.tbMusicTimeLine = new System.Windows.Forms.TrackBar();
+            this.pnlMenuButtons = new System.Windows.Forms.Panel();
+            this.lblVolume = new System.Windows.Forms.Label();
             this.btnGoToFirstMusic = new System.Windows.Forms.Button();
             this.btnPrevious = new System.Windows.Forms.Button();
+            this.tbVolume = new System.Windows.Forms.TrackBar();
             this.btnGoToLastMusic = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnSearchFile = new System.Windows.Forms.Button();
             this.btnPlay = new System.Windows.Forms.Button();
             this.pnlMainContent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMainImage)).BeginInit();
             this.pnlTitles.SuspendLayout();
             this.panelMarginBottom.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMusicTimeLine)).BeginInit();
             this.pnlMenuButtons.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbVolume)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMusicTimeLine)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMainImage)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMainContent
@@ -72,6 +72,17 @@
             this.pnlMainContent.Name = "pnlMainContent";
             this.pnlMainContent.Size = new System.Drawing.Size(984, 510);
             this.pnlMainContent.TabIndex = 5;
+            // 
+            // pbxMainImage
+            // 
+            this.pbxMainImage.BackgroundImage = global::ChrisM.Properties.Resources.kari_shea_YCQFgqOzLmU_unsplash;
+            this.pbxMainImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbxMainImage.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbxMainImage.Location = new System.Drawing.Point(256, 96);
+            this.pbxMainImage.Name = "pbxMainImage";
+            this.pbxMainImage.Size = new System.Drawing.Size(485, 237);
+            this.pbxMainImage.TabIndex = 7;
+            this.pbxMainImage.TabStop = false;
             // 
             // lblTitleCurrentMusic
             // 
@@ -148,6 +159,36 @@
             this.panelMarginBottom.Size = new System.Drawing.Size(984, 77);
             this.panelMarginBottom.TabIndex = 8;
             // 
+            // lblMusicTotalTime
+            // 
+            this.lblMusicTotalTime.AutoSize = true;
+            this.lblMusicTotalTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMusicTotalTime.ForeColor = System.Drawing.Color.White;
+            this.lblMusicTotalTime.Location = new System.Drawing.Point(683, 27);
+            this.lblMusicTotalTime.Name = "lblMusicTotalTime";
+            this.lblMusicTotalTime.Size = new System.Drawing.Size(44, 18);
+            this.lblMusicTotalTime.TabIndex = 17;
+            this.lblMusicTotalTime.Text = "00:00";
+            // 
+            // lblCurrentTime
+            // 
+            this.lblCurrentTime.AutoSize = true;
+            this.lblCurrentTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCurrentTime.ForeColor = System.Drawing.Color.White;
+            this.lblCurrentTime.Location = new System.Drawing.Point(267, 28);
+            this.lblCurrentTime.Name = "lblCurrentTime";
+            this.lblCurrentTime.Size = new System.Drawing.Size(44, 18);
+            this.lblCurrentTime.TabIndex = 16;
+            this.lblCurrentTime.Text = "00:00";
+            // 
+            // tbMusicTimeLine
+            // 
+            this.tbMusicTimeLine.Location = new System.Drawing.Point(315, 26);
+            this.tbMusicTimeLine.Name = "tbMusicTimeLine";
+            this.tbMusicTimeLine.Size = new System.Drawing.Size(362, 45);
+            this.tbMusicTimeLine.TabIndex = 0;
+            this.tbMusicTimeLine.TickStyle = System.Windows.Forms.TickStyle.None;
+            // 
             // pnlMenuButtons
             // 
             this.pnlMenuButtons.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
@@ -165,23 +206,6 @@
             this.pnlMenuButtons.Size = new System.Drawing.Size(984, 100);
             this.pnlMenuButtons.TabIndex = 3;
             // 
-            // tbVolume
-            // 
-            this.tbVolume.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.tbVolume.Location = new System.Drawing.Point(741, 38);
-            this.tbVolume.Name = "tbVolume";
-            this.tbVolume.Size = new System.Drawing.Size(200, 45);
-            this.tbVolume.TabIndex = 10;
-            this.tbVolume.TickStyle = System.Windows.Forms.TickStyle.None;
-            // 
-            // tbMusicTimeLine
-            // 
-            this.tbMusicTimeLine.Location = new System.Drawing.Point(315, 26);
-            this.tbMusicTimeLine.Name = "tbMusicTimeLine";
-            this.tbMusicTimeLine.Size = new System.Drawing.Size(362, 45);
-            this.tbMusicTimeLine.TabIndex = 0;
-            this.tbMusicTimeLine.TickStyle = System.Windows.Forms.TickStyle.None;
-            // 
             // lblVolume
             // 
             this.lblVolume.AutoSize = true;
@@ -192,39 +216,6 @@
             this.lblVolume.Size = new System.Drawing.Size(16, 18);
             this.lblVolume.TabIndex = 15;
             this.lblVolume.Text = "0";
-            // 
-            // lblCurrentTime
-            // 
-            this.lblCurrentTime.AutoSize = true;
-            this.lblCurrentTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCurrentTime.ForeColor = System.Drawing.Color.White;
-            this.lblCurrentTime.Location = new System.Drawing.Point(267, 28);
-            this.lblCurrentTime.Name = "lblCurrentTime";
-            this.lblCurrentTime.Size = new System.Drawing.Size(44, 18);
-            this.lblCurrentTime.TabIndex = 16;
-            this.lblCurrentTime.Text = "00:00";
-            // 
-            // lblMusicTotalTime
-            // 
-            this.lblMusicTotalTime.AutoSize = true;
-            this.lblMusicTotalTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMusicTotalTime.ForeColor = System.Drawing.Color.White;
-            this.lblMusicTotalTime.Location = new System.Drawing.Point(683, 27);
-            this.lblMusicTotalTime.Name = "lblMusicTotalTime";
-            this.lblMusicTotalTime.Size = new System.Drawing.Size(44, 18);
-            this.lblMusicTotalTime.TabIndex = 17;
-            this.lblMusicTotalTime.Text = "00:00";
-            // 
-            // pbxMainImage
-            // 
-            this.pbxMainImage.BackgroundImage = global::ChrisM.Properties.Resources.kari_shea_YCQFgqOzLmU_unsplash;
-            this.pbxMainImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxMainImage.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbxMainImage.Location = new System.Drawing.Point(256, 96);
-            this.pbxMainImage.Name = "pbxMainImage";
-            this.pbxMainImage.Size = new System.Drawing.Size(485, 237);
-            this.pbxMainImage.TabIndex = 7;
-            this.pbxMainImage.TabStop = false;
             // 
             // btnGoToFirstMusic
             // 
@@ -251,6 +242,15 @@
             this.btnPrevious.Size = new System.Drawing.Size(37, 33);
             this.btnPrevious.TabIndex = 13;
             this.btnPrevious.UseVisualStyleBackColor = true;
+            // 
+            // tbVolume
+            // 
+            this.tbVolume.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.tbVolume.Location = new System.Drawing.Point(741, 38);
+            this.tbVolume.Name = "tbVolume";
+            this.tbVolume.Size = new System.Drawing.Size(200, 45);
+            this.tbVolume.TabIndex = 10;
+            this.tbVolume.TickStyle = System.Windows.Forms.TickStyle.None;
             // 
             // btnGoToLastMusic
             // 
@@ -304,6 +304,7 @@
             this.btnPlay.Size = new System.Drawing.Size(57, 53);
             this.btnPlay.TabIndex = 8;
             this.btnPlay.UseVisualStyleBackColor = true;
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
             // Form1
             // 
@@ -316,14 +317,14 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.pnlMainContent.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbxMainImage)).EndInit();
             this.pnlTitles.ResumeLayout(false);
             this.panelMarginBottom.ResumeLayout(false);
             this.panelMarginBottom.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tbMusicTimeLine)).EndInit();
             this.pnlMenuButtons.ResumeLayout(false);
             this.pnlMenuButtons.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tbVolume)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbMusicTimeLine)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxMainImage)).EndInit();
             this.ResumeLayout(false);
 
         }

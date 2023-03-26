@@ -9,17 +9,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 using System.IO;
+using ChrisM.Classes;
 
 namespace ChrisM
 {
     public partial class Form1 : Form
     {
-        private List<string> songFilesPaths = new List<string>();
+        private List<Song> songs = new List<Song>();
 
         public Form1()
         {
             InitializeComponent();
         }
+
+        #region EventsMethods
 
         private void btnSearchFile_Click(object sender, EventArgs e)
         {
@@ -35,22 +38,66 @@ namespace ChrisM
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    //Get the path of specified file
-                    foreach (string path in openFileDialog.FileNames)
+                    for (int i = 0; i < openFileDialog.FileNames.Length; i++)
                     {
-                        songFilesPaths.Add(path);
-                    }
-
-                    foreach (string name in openFileDialog.SafeFileNames)
-                    {
-                        songsTitle.Add(name.Replace(".wav", ""));
+                        songs.Add(new Song(openFileDialog.SafeFileNames[i], openFileDialog.FileNames[i]));
                     }
                 }
 
-                if(lbxTitleMusics.Items != null)
-                    lblTitleCurrentMusic.Text = openFileDialog.SafeFileNames[0].Replace(".wav", "");
+                // First add / search
+                if(songs.Count != 0)
+                {
+                    lblTitleCurrentMusic.Text = songs[0].Title;
+                    songs[0].Selected = true;
+                }
 
-                lbxTitleMusics.DataSource = songsTitle;
+                UpdateListOfSongs();
+            }
+        }
+
+        private void btnPlay_Click(object sender, EventArgs e)
+        {
+            if(songs.Count > 0)
+            {
+                Song currentSong = GetCurrentSong();
+
+                SoundPlayer song = new SoundPlayer(currentSong.Path);
+                song.Play();
+            }
+            else
+            {
+                return;
+            }
+            
+        }
+
+        #endregion
+
+        private Song GetCurrentSong()
+        {
+            foreach (Song song in songs)
+            {
+                if (song.Selected)
+                    return song;
+            }
+
+            return null;
+        }
+
+        private void UpdateListOfSongs()
+        {
+            if(songs.Count > 0)
+            {
+                lbxTitleMusics.Items.Clear();
+
+                foreach (Song song in songs)
+                {
+                    lbxTitleMusics.Items.Add(song.Title);
+                }
+            }
+            else
+            {
+                return;
             }
         }
     }
