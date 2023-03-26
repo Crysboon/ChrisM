@@ -43,9 +43,12 @@ namespace ChrisM
 
                     foreach (string name in openFileDialog.SafeFileNames)
                     {
-                        songsTitle.Add(name);
+                        songsTitle.Add(name.Replace(".wav", ""));
                     }
                 }
+
+                if(lbxTitleMusics.Items != null)
+                    lblTitleCurrentMusic.Text = openFileDialog.SafeFileNames[0].Replace(".wav", "");
 
                 lbxTitleMusics.DataSource = songsTitle;
             }
