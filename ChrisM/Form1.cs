@@ -46,24 +46,26 @@ namespace ChrisM
                 {
                     for (int i = 0; i < openFileDialog.FileNames.Length; i++)
                     {
-                        songs.Add(new Song(openFileDialog.SafeFileNames[i], openFileDialog.FileNames[i]));
+                        songs.Add(new Song(i, openFileDialog.SafeFileNames[i], openFileDialog.FileNames[i]));
                     }
                 }
 
                 // First add / search
-                if(isListOfSongsEmpty())
+                if(songs.Count != 0)
                 {
                     lblTitleCurrentMusic.Text = songs[0].Title;
                     songs[0].Selected = true;
                 }
 
                 UpdateListOfSongs();
+                
+                UpdateButtonsColor();
             }
         }
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            if(isListOfSongsEmpty())
+            if(songs.Count != 0)
             {
                 Song currentSong = GetCurrentSong();
 
@@ -121,11 +123,16 @@ namespace ChrisM
                         button.BackgroundImage = Helper.ChangeImageColor(button.BackgroundImage, Color.Black, Color.Gray);
                 }
             }
-            
-            if(songs.Count > 1)
+            else
             {
-                btnNext.BackgroundImage = Helper.ChangeImageColor(btnNext.BackgroundImage, Color.Black, Color.White);
-                btnGoToLastMusic.BackgroundImage = Helper.ChangeImageColor(btnGoToLastMusic.BackgroundImage, Color.Black, Color.White);
+                for (int i = 0; i < songs.Count; i++)
+                {
+                    if (songs.Count > 1 && songs[i].Index != songs.Count)
+                    {
+                        btnNext.BackgroundImage = Helper.ChangeImageColor(btnNext.BackgroundImage, Color.Black, Color.White);
+                        btnGoToLastMusic.BackgroundImage = Helper.ChangeImageColor(btnGoToLastMusic.BackgroundImage, Color.Black, Color.White);
+                    }
+                }
             }
             
         }

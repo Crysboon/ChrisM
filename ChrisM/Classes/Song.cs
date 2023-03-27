@@ -12,6 +12,8 @@ namespace ChrisM.Classes
 {
     public class Song
     {
+        public int Index { get; private set; }
+
         private string title;
         public string Title
         {
@@ -21,14 +23,14 @@ namespace ChrisM.Classes
         public string Path { get; set; }
         public bool Selected { get; set; }
 
-        public Song(string title, string path) 
+        public Song(int index, string title, string path) 
         {
             Title = title;
             Path = path;
             Selected = false;
         }
 
-        public Song(string title, string path, bool selected)
+        public Song(int index, string title, string path, bool selected)
         {
             Title = title;
             Path = path;
