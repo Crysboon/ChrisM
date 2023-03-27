@@ -20,6 +20,9 @@ namespace ChrisM
         public Form1()
         {
             InitializeComponent();
+
+            // Default button color
+            NoSongsButtonsColor();
         }
 
         #region EventsMethods
@@ -106,10 +109,16 @@ namespace ChrisM
             return songs.Count > 0 ? true : false;
         }
 
-        //private void NoSongsButtonsColor()
-        //{
-        //    
-        //}
+        private void NoSongsButtonsColor()
+        {
+            foreach (Button button in pnlMenuButtons.Controls.OfType<Button>())
+            {
+                if (button.Name != "btnSearchFile")
+                    button.BackgroundImage = Helper.ChangeImageColor(button.BackgroundImage, Color.Black, Color.Gray);
+                else
+                    button.BackgroundImage = Helper.ChangeImageColor(button.BackgroundImage, Color.Black, Color.White);
+            }
+        }
 
         enum SongState
         {
