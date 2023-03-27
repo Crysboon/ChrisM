@@ -45,7 +45,7 @@ namespace ChrisM
                 }
 
                 // First add / search
-                if(songs.Count != 0)
+                if(isListOfSongsEmpty())
                 {
                     lblTitleCurrentMusic.Text = songs[0].Title;
                     songs[0].Selected = true;
@@ -57,7 +57,7 @@ namespace ChrisM
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            if(songs.Count > 0)
+            if(isListOfSongsEmpty())
             {
                 Song currentSong = GetCurrentSong();
 
@@ -86,7 +86,7 @@ namespace ChrisM
 
         private void UpdateListOfSongs()
         {
-            if(songs.Count > 0)
+            if(isListOfSongsEmpty())
             {
                 lbxTitleMusics.Items.Clear();
 
@@ -100,5 +100,23 @@ namespace ChrisM
                 return;
             }
         }
+
+        private bool isListOfSongsEmpty()
+        {
+            return songs.Count > 0 ? true : false;
+        }
+
+        //private void NoSongsButtonsColor()
+        //{
+        //    
+        //}
+
+        enum SongState
+        {
+            Playing,
+            Paused
+        }
+
+        
     }
 }
