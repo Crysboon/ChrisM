@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Media;
 using System.IO;
 using ChrisM.Classes;
+using System.ComponentModel.Design;
 
 namespace ChrisM
 {
@@ -21,8 +22,10 @@ namespace ChrisM
         {
             InitializeComponent();
 
-            // Default button color
-            NoSongsButtonsColor();
+            UpdateButtonsColor();
+
+            // Default values
+            btnSearchFile.BackgroundImage = Helper.ChangeImageColor(btnSearchFile.BackgroundImage, Color.Black, Color.White);
         }
 
         #region EventsMethods
@@ -66,6 +69,9 @@ namespace ChrisM
 
                 SoundPlayer song = new SoundPlayer(currentSong.Path);
                 song.Play();
+
+                // Change button image
+                btnPlay.BackgroundImage = Helper.ChangeImageColor(Properties.Resources.pause, Color.Black, Color.White);
             }
             else
             {
@@ -89,7 +95,7 @@ namespace ChrisM
 
         private void UpdateListOfSongs()
         {
-            if(isListOfSongsEmpty())
+            if(songs.Count != 0)
             {
                 lbxTitleMusics.Items.Clear();
 
@@ -104,20 +110,24 @@ namespace ChrisM
             }
         }
 
-        private bool isListOfSongsEmpty()
+        private void UpdateButtonsColor()
         {
-            return songs.Count > 0 ? true : false;
-        }
-
-        private void NoSongsButtonsColor()
-        {
-            foreach (Button button in pnlMenuButtons.Controls.OfType<Button>())
+            // All disabled
+            if(songs.Count == 0)
             {
-                if (button.Name != "btnSearchFile")
-                    button.BackgroundImage = Helper.ChangeImageColor(button.BackgroundImage, Color.Black, Color.Gray);
-                else
-                    button.BackgroundImage = Helper.ChangeImageColor(button.BackgroundImage, Color.Black, Color.White);
+                foreach (Button button in pnlMenuButtons.Controls.OfType<Button>())
+                {
+                    if (button.Name != "btnSearchFile")
+                        button.BackgroundImage = Helper.ChangeImageColor(button.BackgroundImage, Color.Black, Color.Gray);
+                }
             }
+            
+            if(songs.Count > 1)
+            {
+                btnNext.BackgroundImage = Helper.ChangeImageColor(btnNext.BackgroundImage, Color.Black, Color.White);
+                btnGoToLastMusic.BackgroundImage = Helper.ChangeImageColor(btnGoToLastMusic.BackgroundImage, Color.Black, Color.White);
+            }
+            
         }
 
         enum SongState
@@ -125,7 +135,5 @@ namespace ChrisM
             Playing,
             Paused
         }
-
-        
     }
 }
