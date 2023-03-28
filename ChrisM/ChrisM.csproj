@@ -49,6 +49,9 @@
     <Compile Include="Classes\Helper.cs" />
     <Compile Include="Classes\HSLColor.cs" />
     <Compile Include="Classes\Song.cs" />
+    <Compile Include="CustomControls\CustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -113,21 +113,27 @@ namespace ChrisM
         }
 
         private void UpdateButtonsColor()
-        {
-            // All disabled
+        { 
             if(songs.Count == 0)
             {
+                // All disabled
                 foreach (Button button in pnlMenuButtons.Controls.OfType<Button>())
                 {
                     if (button.Name != "btnSearchFile")
                         button.BackgroundImage = Helper.ChangeImageColor(button.BackgroundImage, Color.Black, Color.Gray);
                 }
             }
+            else if(songs.Count == 1)
+            {
+                // Play enable (1 song)
+                btnPlay.BackgroundImage = Helper.ChangeImageColor(btnNext.BackgroundImage, Color.Black, Color.White);
+            }
             else
             {
                 for (int i = 0; i < songs.Count; i++)
                 {
-                    if (songs.Count > 1 && songs[i].Index != songs.Count)
+                    // 
+                    if (songs[i].Index != songs.Count)
                     {
                         btnNext.BackgroundImage = Helper.ChangeImageColor(btnNext.BackgroundImage, Color.Black, Color.White);
                         btnGoToLastMusic.BackgroundImage = Helper.ChangeImageColor(btnGoToLastMusic.BackgroundImage, Color.Black, Color.White);
